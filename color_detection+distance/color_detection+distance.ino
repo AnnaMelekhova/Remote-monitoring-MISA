@@ -44,9 +44,9 @@ if (proximity <= 50) {
 }
 
 // print the distance in centimeters
-Serial.print("Distance: ");
+//Serial.print("Distance: ");
 Serial.print(distance);
-Serial.println(" cm");
+//Serial.println(" cm");
   APDS.readColor(r, g, b);
 
 
@@ -62,7 +62,8 @@ Serial.println(" cm");
   else{
     color="Undefined";
   }
-  Serial.print("Color: ");
+  //Serial.print("Color: ");
+  Serial.print(",");
   Serial.println(color);
 
   delay(1000);
